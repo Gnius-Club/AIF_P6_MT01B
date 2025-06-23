@@ -1,0 +1,261 @@
+!DOCTYPE html
+html lang=es
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titlePlaybook-P6-TM01Btitle
+    !-- Los estilos y scripts se cargan desde archivos externos --
+    link rel=stylesheet href=style.css
+    link rel=stylesheet href=httpsfonts.googleapis.comcss2family=Robotowght@400;500;700&display=swap
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.0.0cssall.min.css
+head
+body
+
+    header
+        h1span class=book-icon📋span strongPlaybook Sesión 1B 6to Primariastrongh1
+        div class=header-widgets
+            div class=timer-container
+                span id=timer⏱️ 0000span
+                button id=startStopStartbutton
+                button id=resetResetbutton
+            div
+            div class=theme-toggle
+                i class=fas fa-suni
+                label class=switch
+                    input type=checkbox id=theme-toggle-input
+                    span class=slider roundspan
+                label
+                i class=fas fa-mooni
+            div
+        div
+    header
+
+    div class=main-container
+        aside class=activity-list
+            h2Actividadesh2
+            ul
+                lia href=#activity-0📝ali
+                lia href=#activity-11ali
+                lia href=#activity-22ali
+                lia href=#activity-33ali
+            ul
+        aside
+
+        main class=content
+            div class=progress-bar
+                div class=progressdiv
+            div
+
+            button id=toggle-dialoguesMostrar todos los diálogosbutton
+
+            div class=activity-card id=activity-0
+                h2span class=book-icon📝span De un Vistazo Sesión Gniush2
+                p class=overview-subtitleResumen rápido de objetivos, materiales y preparación para el facilitador.p
+                div class=overview-table-container
+                    table
+                        thead
+                            tr
+                                th style=width 50%;Objetivos, Tácticas y Entregableth
+                                th style=width 50%;Materiales Específicos y Preparación Previath
+                            tr
+                        thead
+                        tbody
+                            tr
+                                td
+                                    strongObjetivos de Aprendizajestrong
+                                    ul
+                                        liQue los estudiantes, trabajando en equipo, implementen su Playlist de Trucos en el robot XGO. Que ejecuten y depuren al menos dos secuencias de código Python, comprendiendo la relación entre el código de texto y la acción física del robot, y documentando los resultados de sus pruebas.li
+                                    ul
+                                    strongSecuencia de Clasestrong
+                                    ul
+                                        liIMPLEMENTACIÓN DEL CÓDIGO (Ejecución)li
+                                        liPRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVOli
+                                        liGNIUS STORM Y REINICIO DEL CICLOli
+                                    ul
+                                    strongEntregable Clavestrong
+                                    ul
+                                        liRobot XGO ejecutando una secuencia de trucos depurada y funcional, demostrada por cada equipo.li
+                                    ul
+                                td
+                                td
+                                    strongMateriales Específicosstrong
+                                    ul
+                                        liProyector o pantalla interactiva.li
+                                        liConexión a internet estable.li
+                                        liAcceso al entorno de programación Python en las computadoras.li
+                                        liRobots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.li
+                                        liLos Planes de Pruebas (Playlist de Trucos) creados por cada equipo en la Sesión 1A.li
+                                        liPresentación de diapositivas.li
+                                        liChat de Agente Gnius (Xolo) activo para consultas de debugging.li
+                                    ul
+                                    strongPreparación Previa para ESTA Sesiónstrong
+                                    ol
+                                        listrongRevisión de Misión (Interna)strong
+                                            ul
+                                                liVerificar conexión a internet y que el entorno Python funcione.li
+                                                liAsegurar que los robots XGO V2 estén completamente cargados.li
+                                                liTener la presentación de diapositivas lista.li
+                                                liProbar el chat Agente Gnius (Xolo) para consultas.li
+                                            ul
+                                        li
+                                        listrongFamiliarizaciónstrong Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.li
+                                    ol
+                                td
+                            tr
+                        tbody
+                    table
+                div
+            div
+
+            div class=activity-card id=activity-1
+                h2⚡ Actividad 1 IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 15 minutosh2
+                pstrongPropósitostrong Poner en práctica el plan creado en la Sesión A, ejecutando el código en el robot físico por primera vez y comparando el resultado real con el esperado.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Bienvenida y Conexión con Sesión A ⏰ 1 minutoh3
+                            p(Proyectar Diapositiva 2) Da la bienvenida a los alumnos, recuérdales el trabajo de diseño que hicieron en la Sesión A y crea expectación para la sesión práctica de hoy.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Hola de nuevo, equipos! ¡Bienvenidos a la Sesión B! En la clase pasada, fueron unos diseñadores increíbles y crearon una 'Playlist de Trucos' llena de ideas geniales. Hoy es el día de convertir esos planes en acción. ¿Están listos para ver a sus robots moversep
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Guía de Conexión ⏰ 1 minutoh3
+                            p(Proyectar Diapositiva 3) Guía a los equipos para que se preparen técnicamente para la sesión.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Excelente! Ahora, preparen su estación de trabajo. Conecten sus computadoras al robot XGO, abran su entorno de programación y tengan a mano esa 'Playlist de Trucos' que crearon. ¡Vamos a darle vida a ese código!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 3 Prueba del Truco 1 ⏰ 6 minutosh3
+                            p(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten el primer código de su plan, enfocándose en el ciclo de predicción y observación.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantMuy bien, vamos con la Prueba 1. El equipo encargado de programar, cargue el primer código de su playlist en el editor. Antes de presionar 'ejecutar', háganse esta pregunta en equipo '¿Qué esperamos ver exactamente'. Verbalicen el resultado esperado, por ejemplo Ok, ahora el robot debería sentarse, esperar un segundo, y luego mover la cola. ¿Listos ¡Ejecuten el código y observen con atención!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 4 Prueba de los Siguientes Trucos ⏰ 7 minutosh3
+                            pGuía a los equipos para que analicen el primer resultado y repitan el proceso con los siguientes trucos de su lista, fomentando la participación de todos los miembros.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantPerfecto. ¿El robot hizo lo que esperaban Discutan brevemente. Ahora, pasemos a la siguiente prueba de su playlist. ¡Recuerden rotar quién carga el código! Repitan el proceso primero predigan en voz alta qué va a pasar, y luego ejecuten y observen. ¡Comparen el resultado con su predicción!p
+                            div
+                        div
+                    div
+                div
+            div
+
+            div class=activity-card id=activity-2
+                h2⚡ Actividad 2 PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutosh2
+                pstrongPropósitostrong Introducir a los estudiantes al proceso de depuración (debugging) de forma práctica, enseñándoles a identificar problemas, analizar errores y buscar soluciones con la ayuda de la IA.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Introducción al Debugging ⏰ 3 minutosh3
+                            p(Proyectar Diapositiva 5) Introduce el concepto de debugging como una parte normal y esencial de la programación. Prepara a los estudiantes para enfrentar errores sin frustración.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Excelente! Es muy probable que algunas de sus pruebas no hayan funcionado a la primera, ¡y eso es fantástico! Porque ahora empieza la parte más importante del trabajo de un programador la depuración o 'debugging'. 'Debugging' es como ser un detective buscamos pistas (errores) para resolver el misterio de por qué nuestro código no hace lo que queremos. ¡Los errores no son malos, son oportunidades para aprender!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Ciclo de Depuración - Error de Sintaxis ⏰ 5 minutesh3
+                            p(Proyectar Diapositivas 6 y 7) Guía a los equipos a través de un escenario de error común para que aprendan a interpretarlo y solucionarlo.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantstrongProblemastrong ¡Oh, no! El robot hizo el primer movimiento, pero luego se detuvo y dio un error en la pantalla.p
+                                p class=dialogue assistantstrongAnálisis Propiostrong Miren el mensaje de error. ¿Qué dice Léanlo con atención. A veces, la respuesta está ahí. ¿Dice algo como 'indentation' o 'syntax'p
+                                p class=dialogue assistantstrongConsulta a Xolostrong Si no están seguros, ¡pregunten a Xolo! Copien el mensaje de error y su código, y péguenlo en el chat. Xolo, tenemos este error [pegar error]. Este es nuestro código [pegar código]. ¿Qué significap
+                                p class=dialogue assistantstrongSugerencia de Xolostrong ¡Ah, un error común en Python! `IndentationError` significa que los espacios al principio de una línea no son correctos. Asegúrense de que todo el código esté alineado correctamente. ¡Cada espacio cuenta!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 3 Ciclo de Depuración - Ajuste de Tiempo ⏰ 4 minutosh3
+                            p(Proyectar Diapositiva 8) Guía a los estudiantes a través de otro problema común relacionado con la velocidad y cómo solucionarlo modificando parámetros.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantstrongProblemastrong El robot se mueve, pero es tan rápido que no podemos ver bien el truco.p
+                                p class=dialogue assistantstrongAnálisis Propiostrong El código funciona, pero el resultado no es el ideal. Necesitamos pausas más largas para poder apreciar cada movimiento.p
+                                p class=dialogue assistantstrongConsulta a Xolostrong Xolo, ¿cómo hacemos que el truco sea más lento y se vea mejorp
+                                p class=dialogue assistantstrongSugerencia de Xolostrong ¡Fácil! Busquen las líneas `time.sleep()`. Aumenten el número que está adentro. En lugar de `time.sleep(1)`, prueben con `time.sleep(2)` para duplicar la pausa. ¡Jueguen con esos números hasta que el ritmo sea perfecto!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 4 Implementación del Desafío (Prueba de Combinación) ⏰ 3 minutosh3
+                            p(Proyectar Diapositiva 9) Anima a los equipos a intentar la prueba de combinación de su plan, aplicando lo que han aprendido sobre depuración.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistantAhora que son expertos en depuración, ¡vamos por el desafío! Miren su 'Playlist' y encuentren su prueba de combinación. Intenten juntar los códigos de varios trucos en un solo programa. Esto les obligará a pensar en la secuencia y a manejar los posibles errores que surjan. ¡Apliquen todo lo que aprendieron!p
+                            div
+                        div
+                    div
+                div
+            div
+
+            div class=activity-card id=activity-3
+                h2⚡ Actividad 3 GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutosh2
+                pstrongPropósitostrong Celebrar los logros, compartir aprendizajes clave sobre la depuración y fomentar una mentalidad de mejora continua al iniciar un nuevo ciclo de trabajo.p
+                div class=steps
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 1 Gnius STORM ⏰ 5 minutosh3
+                            p(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus resultados y compartan sus experiencias de depuración.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Es momento de Gnius STORM! Cada equipo, prepárese para mostrar el 'truco' que mejor les funcionó. Y lo más importante, compartan con la clase un desafío de depuración que resolvieron. Por ejemplo Al principio, el robot no movía la cola porque nos faltó el `time.sleep()` para darle tiempo a hacerlo antes de que el programa terminara. ¡Compartir nuestros errores nos ayuda a todos a aprender!p
+                            div
+                        div
+                    div
+                    div class=step-card
+                        div class=step-content
+                            h3Paso 2 Reinicio del Ciclo ⏰ 5 minutosh3
+                            p(Proyectar Diapositiva 11) Concluye la actividad principal y lanza un mini-desafío para aprovechar el tiempo restante y reforzar el ciclo de desarrollo ágil.p
+                        div
+                        div class=collapsible
+                            button type=button class=collapsible-buttonDiálogo Sugeridobutton
+                            div class=collapsible-content
+                                p class=dialogue assistant¡Increíble trabajo! Han completado su primera playlist. La programación es un ciclo sin fin de crear, probar y mejorar. Así que, con el tiempo que nos queda, ¡vamos a la siguiente! Miren su Plan de Pruebas. ¿Cuál es la siguiente idea que quieren probar ¿La combinación o una idea nueva Copien ese código y empecemos un nuevo ciclo rápido de prueba y depuración. ¡No hay tiempo que perder!p
+                            div
+                        div
+                    div
+                div
+            div
+        main
+    div
+
+    script src=script.jsscript
+body
+html
