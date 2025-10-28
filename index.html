@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P6-TM01B</title>
+    <title>Playbook: Sesión 5 - 6to Primaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3B 6to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 6 - 6to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -64,7 +64,14 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Que los estudiantes, trabajando en equipo, implementen su Playlist de Trucos en el robot XGO. Que ejecuten y depuren al menos dos secuencias de código Python, comprendiendo la relación entre el código de texto y la acción física del robot, y documentando los resultados de sus pruebas.</li>
+                                        <li>Al final de la sesión, los estudiantes podrán:
+                                            <ul>
+                                                <li>Cargar y ejecutar el archivo base de Python para el XGO.</li>
+                                                <li>Implementar y probar comandos básicos de acción y movimiento.</li>
+                                                <li>Desarrollar habilidades de debugging para solucionar errores comunes.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Objetivo General de la Sesión:</strong> Que los estudiantes implementen, prueben y depuren los comandos de acción y postura más básicos del XGO.</li>
                                     </ul>
                                     <h4>Vocabulario Clave:</h4>
                                     <ul>
@@ -91,7 +98,7 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso al entorno de programación Python en las computadoras.</li>
                                         <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
-                                        <li>Los Planes de Pruebas (Playlist de Trucos) creados por cada equipo en la Sesión 1A.</li>
+                                        <li>Los Planes de Pruebas (Playlist de Trucos) creados por cada equipo en la sesión pasada.</li>
                                         <li>Presentación de diapositivas.</li>
                                         <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
                                     </ul>
@@ -120,13 +127,13 @@
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                            <h3>Paso 1: Bienvenida y Conexión con la sesión pasada ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la sesión pasada y crea expectación.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola de nuevo, equipos! ¡Bienvenidos a la Sesión B! En la clase pasada, fueron unos diseñadores increíbles y crearon una 'Playlist de Trucos' llena de ideas geniales. Hoy es el día de convertir esos planes en acción. ¿Están listos para ver a sus robots moverse?</p>
+                                <p class="dialogue assistant">¡Hola de nuevo, equipos! ¡Bienvenidos a la sesión de hoy! En la clase pasada, fueron unos diseñadores increíbles y crearon una <strong>'Playlist de Trucos'</strong> llena de ideas geniales. Hoy es el día de convertir esos planes en acción. ¿Están listos para ver a sus robots moverse?</p>
                             </div>
                         </div>
                     </div>
@@ -138,7 +145,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Ahora, preparen su estación de trabajo. Conecten sus computadoras al robot XGO, abran su entorno de programación y tengan a mano esa 'Playlist de Trucos' que crearon. ¡Vamos a darle vida a ese código!</p>
+                                <p class="dialogue assistant">¡Excelente! Ahora, preparen su <strong>estación de trabajo</strong>. Conecten sus computadoras al <strong>robot XGO</strong>, abran su <strong>entorno de programación</strong> y tengan a mano esa <strong>'Playlist de Trucos'</strong> que crearon. ¡Vamos a darle vida a ese <strong>código</strong>! Pídanle a XOLO: <strong>Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para el robot XGO. Quiero probar las acciones stand, sit y los movimientos direccionales. Este es mi código de la sesión pasada: [escribe aquí tu código].</strong></p>
                             </div>
                         </div>
                     </div>
@@ -147,7 +154,7 @@
 
             <div class="activity-card" id="activity-2">
                 <h2>⚡ Actividad 2 IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la Sesión A, ejecutando el código en el robot físico por primera vez y comparando el resultado real con el esperado.</p>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando el código en el robot físico por primera vez y comparando el resultado real con el esperado.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
@@ -157,7 +164,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Ahora que todos están conectados y listos, vamos con la Prueba 1. El equipo encargado de programar, cargue el primer código de su playlist en el editor. Antes de ejecutar, vamos a hacernos una pregunta detonadora: ¿qué creen que pasará? Verbalicen el resultado esperado, por ejemplo "Ok, ahora el robot debería sentarse, esperar un segundo, y luego mover la cola." ¿Listos? ¡Ejecuten el código y observen con atención!</p>
+                                <p class="dialogue assistant">¡Muy bien! Ahora que todos están conectados y listos, vamos con la <strong>Prueba 1</strong>. El equipo encargado de programar, cargue el primer código de su <strong>playlist</strong> en el editor. Antes de ejecutar, vamos a hacernos una <strong>pregunta detonadora</strong>: ¿qué creen que pasará? Verbalicen el <strong>resultado esperado</strong>, por ejemplo "Ok, ahora el robot debería sentarse, esperar un segundo, y luego mover la cola." ¿Listos? ¡<strong>Ejecuten el código</strong> y observen con atención!</p>
                             </div>
                         </div>
                     </div>
@@ -169,7 +176,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. ¿El robot hizo lo que esperaban? Discutan brevemente. Ahora, pasemos a la siguiente prueba de su playlist. ¡Recuerden rotar quién carga el código! Repitan el proceso: primero predigan en voz alta qué va a pasar, y luego ejecuten y observen. ¡Comparen el resultado con su predicción!</p>
+                                <p class="dialogue assistant">Perfecto. ¿El robot hizo lo que esperaban? Discutan brevemente. Ahora, pasemos a la <strong>siguiente prueba</strong> de su <strong>playlist</strong>. ¡Recuerden <strong>rotar quién carga el código</strong>! Repitan el proceso: primero <strong>predigan</strong> en voz alta qué va a pasar, y luego <strong>ejecuten y observen</strong>. ¡Comparen el resultado con su predicción!</p>
                             </div>
                         </div>
                     </div>
@@ -188,7 +195,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Es muy probable que algunas de sus pruebas no hayan funcionado a la primera, ¡y eso es fantástico! Porque ahora empieza la parte más importante del trabajo de un programador: la depuración o 'debugging'. 'Debugging' es como ser un detective: buscamos pistas (errores) para resolver el misterio de por qué nuestro código no hace lo que queremos. Si algo no funciona, ¡genial! No lo vean como algo malo, sino como una oportunidad para investigar.</p>
+                                <p class="dialogue assistant">¡Excelente! Es muy probable que algunas de sus pruebas no hayan funcionado a la primera, ¡y eso es fantástico! Porque ahora empieza la parte más importante del trabajo de un <strong>programador</strong>: la <strong>depuración</strong> o <strong>'debugging'</strong>. 'Debugging' es como ser un <strong>detective</strong>: buscamos <strong>pistas (errores)</strong> para resolver el misterio de por qué nuestro código no hace lo que queremos. Si algo no funciona, ¡genial! No lo vean como algo malo, sino como una oportunidad para investigar.</p>
                             </div>
                         </div>
                     </div>
@@ -201,9 +208,9 @@
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant"><strong>Problema</strong> ¡Oh, no! El robot hizo el primer movimiento, pero luego se detuvo y dio un error en la pantalla.</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio</strong> Miren el mensaje de error. ¿Qué dice? Léanlo con atención. A veces, la respuesta está ahí. ¿Dice algo como 'indentation' o 'syntax'?</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> Si no están seguros, ¡pregunten a Xolo! Mi código no funciona y creo que es por los espacios. ¿Me ayudas?</p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Ah, un error común en Python! `IndentationError` significa que los espacios al principio de una línea no son correctos. Asegúrense de que todo el código esté alineado correctamente. ¡Cada espacio cuenta!</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio</strong> Miren el <strong>mensaje de error</strong>. ¿Qué dice? Léanlo con atención. A veces, la respuesta está ahí. ¿Dice algo como <strong>'indentation'</strong> o <strong>'syntax'</strong>?</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> Si no están seguros, ¡pregunten a Xolo! Díganle: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para el robot XGO. Quiero probar las acciones stand, sit y los movimientos direccionales. Este es mi código de la sesión pasada: [escribe aquí tu código]."</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Ah, un error común en Python! <strong>`IndentationError`</strong> significa que los <strong>espacios</strong> al principio de una línea no son correctos. Asegúrense de que todo el código esté alineado correctamente. ¡Cada espacio cuenta!</p>
                             </div>
                         </div>
                     </div>
@@ -216,9 +223,9 @@
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant"><strong>Problema</strong> El robot se mueve, pero es tan rápido que no podemos ver bien el truco.</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio</strong> El código funciona, pero el resultado no es el ideal. Necesitamos pausas más largas para poder apreciar cada movimiento.</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> "Xolo, ¿cómo hacemos que el truco sea más lento y se vea mejor?"</p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Fácil! Busquen las líneas `time.sleep()`. Aumenten el número que está adentro. En lugar de `time.sleep(1)`, prueben con `time.sleep(2)` para duplicar la pausa. ¡Jueguen con esos números hasta que el ritmo sea perfecto!</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio</strong> El <strong>código funciona</strong>, pero el <strong>resultado no es el ideal</strong>. Necesitamos <strong>pausas más largas</strong> para poder apreciar cada movimiento.</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> <strong>"Xolo, ¿cómo hacemos que el truco sea más lento y se vea mejor?"</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Fácil! Busquen las líneas <strong>`time.sleep()`</strong>. Aumenten el número que está adentro. En lugar de `time.sleep(1)`, prueben con `time.sleep(2)` para duplicar la pausa. ¡Jueguen con esos números hasta que el ritmo sea perfecto!</p>
                             </div>
                         </div>
                     </div>
@@ -230,7 +237,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que son expertos en depuración, ¡vamos por el desafío! Miren su 'Playlist' y encuentren su prueba de combinación. Intenten juntar los códigos de varios trucos en un solo programa. Esto les obligará a pensar en la secuencia y a manejar los posibles errores que surjan. ¡Apliquen todo lo que aprendieron!</p>
+                                <p class="dialogue assistant">Ahora que son expertos en <strong>depuración</strong>, ¡vamos por el <strong>desafío</strong>! Miren su <strong>'Playlist'</strong> y encuentren su <strong>prueba de combinación</strong>. Intenten <strong>juntar los códigos</strong> de varios trucos en un solo programa. Esto les obligará a pensar en la <strong>secuencia</strong> y a manejar los posibles <strong>errores</strong> que surjan. ¡Apliquen todo lo que aprendieron!</p>
                             </div>
                         </div>
                     </div>
@@ -249,7 +256,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Es momento de Gnius STORM! Cada equipo, prepárese para mostrar el 'truco' que mejor les funcionó. Y lo más importante, compartan con la clase un desafío de depuración que resolvieron. Por ejemplo "Al principio, el robot no movía la cola porque nos faltó el `time.sleep()` para darle tiempo a hacerlo antes de que el programa terminara." ¡Compartir nuestros errores nos ayuda a todos a aprender!</p>
+                                <p class="dialogue assistant">¡Es momento de <strong>Gnius STORM</strong>! Cada equipo, prepárese para mostrar el <strong>'truco'</strong> que mejor les funcionó. Y lo más importante, compartan con la clase un <strong>desafío de depuración</strong> que resolvieron. Por ejemplo "Al principio, el robot no movía la cola porque nos faltó el `time.sleep()` para darle tiempo a hacerlo antes de que el programa terminara." ¡Compartir nuestros errores nos ayuda a todos a aprender!</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +268,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Increíble trabajo! Han completado su primera playlist. La programación es un ciclo sin fin de crear, probar y mejorar. Así que, con el tiempo que nos queda, ¡vamos a la siguiente! Miren su Plan de Pruebas. ¿Cuál es la siguiente idea que quieren probar? ¿La combinación o una idea nueva? Copien ese código y empecemos un nuevo ciclo rápido de prueba y depuración. ¡No hay tiempo que perder!</p>
+                                <p class="dialogue assistant">¡Increíble trabajo! Han completado su primera playlist. La programación es un <strong>ciclo sin fin de crear, probar y mejorar</strong>. Así que, con el tiempo que nos queda, ¡vamos a la siguiente! Miren su <strong>Plan de Pruebas</strong>. ¿Cuál es la siguiente idea que quieren probar? ¿La combinación o una idea nueva? Copien ese código y empecemos un <strong>nuevo ciclo rápido de prueba y depuración</strong>. ¡No hay tiempo que perder!</p>
                             </div>
                         </div>
                     </div>
