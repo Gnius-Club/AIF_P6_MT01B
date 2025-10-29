@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 5 - 6to Primaria</title>
+    <title>Playbook: Sesión 6 - 6to Primaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -64,31 +64,27 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Al final de la sesión, los estudiantes podrán:
-                                            <ul>
-                                                <li>Cargar y ejecutar el archivo base de Python para el XGO.</li>
-                                                <li>Implementar y probar comandos básicos de acción y movimiento.</li>
-                                                <li>Desarrollar habilidades de debugging para solucionar errores comunes.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Objetivo General de la Sesión:</strong> Que los estudiantes implementen, prueben y depuren los comandos de acción y postura más básicos del XGO.</li>
+                                        <li>Ajustar <strong>velocidad</strong>, <strong>tipo de marcha</strong> y <strong>duración</strong> del movimiento.</li>
+                                        <li>Comprender el papel de las <strong>API de alto nivel</strong> como <strong>abstracción</strong> de la complejidad.</li>
+                                        <li>Evaluar la <strong>precisión</strong> y confianza en los algoritmos internos de control.</li>
+                                        <li>Aplicar <strong>calibración de servos</strong> y depuración básica.</li>
                                     </ul>
                                     <h4>Vocabulario Clave:</h4>
                                     <ul>
-                                      <li><b>Debugging (di-bá-guing):</b> El arte de encontrar y arreglar errores en el código.</li>
-                                      <li><b>Syntax (sin-tax):</b> Las reglas de escritura de un lenguaje de programación.</li>
-                                      <li><b>Indentation (in-den-tei-shon):</b> Los espacios al inicio de una línea de código.</li>
+                                      <li><b>API de Alto Nivel:</b> Un conjunto de comandos simples que esconden una gran complejidad.</li>
+                                      <li><b>Abstracción / Caja Negra:</b> La idea de usar una herramienta sin necesidad de saber cómo funciona por dentro.</li>
+                                      <li><b>Calibración:</b> El proceso de hacer pequeños ajustes para que un sistema sea más preciso.</li>
                                     </ul>
                                     <strong>Secuencia de Clase</strong>
                                     <ul>
                                         <li>⚡Bienvenida y Conexión</li>
-                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
-                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
+                                        <li>⚡IMPLEMENTACIÓN Y PRUEBA DE MARCHAS</li>
+                                        <li>⚡EXPERIMENTACIÓN Y CALIBRACIÓN DE PARÁMETROS</li>
                                         <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
                                     </ul>
                                     <strong>Entregable Clave</strong>
                                     <ul>
-                                        <li>Robot XGO ejecutando una secuencia de trucos depurada y funcional, demostrada por cada equipo.</li>
+                                        <li>Robot XGO ejecutando una secuencia de marcha calibrada, demostrada por cada equipo.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -98,9 +94,9 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso al entorno de programación Python en las computadoras.</li>
                                         <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
-                                        <li>Los Planes de Pruebas (Playlist de Trucos) creados por cada equipo en la sesión pasada.</li>
+                                        <li>Los "Planes de Marcha" creados por cada equipo en la sesión pasada.</li>
                                         <li>Presentación de diapositivas.</li>
-                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de calibración.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión</strong>
                                     <ol>
@@ -133,7 +129,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola de nuevo, equipos! ¡Bienvenidos a la sesión de hoy! En la clase pasada, fueron unos diseñadores increíbles y crearon una <strong>'Playlist de Trucos'</strong> llena de ideas geniales. Hoy es el día de convertir esos planes en acción. ¿Están listos para ver a sus robots moverse?</p>
+                                <p class="dialogue assistant">¡Hola de nuevo, ingenieros! En la clase pasada, diseñaron sus <strong>'Planes de Marcha'</strong>. Hoy es el día de ejecutarlos y, lo más importante, de <strong>calibrarlos</strong> para que sean perfectos. ¿Están listos para ajustar sus robots?</p>
                             </div>
                         </div>
                     </div>
@@ -145,7 +141,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Ahora, preparen su <strong>estación de trabajo</strong>. Conecten sus computadoras al <strong>robot XGO</strong>, abran su <strong>entorno de programación</strong> y tengan a mano esa <strong>'Playlist de Trucos'</strong> que crearon. ¡Vamos a darle vida a ese <strong>código</strong>! Pídanle a XOLO: <strong>Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para el robot XGO. Quiero probar las acciones stand, sit y los movimientos direccionales. Este es mi código de la sesión pasada: [escribe aquí tu código].</strong></p>
+                                <p class="dialogue assistant">¡Excelente! Ahora, preparen su <strong>estación de trabajo</strong>. Conecten sus computadoras al <strong>robot XGO</strong>, abran su <strong>entorno de programación</strong> y tengan a mano su <strong>'Plan de Marcha'</strong>. Vamos a darle vida a ese <strong>código</strong> y a refinarlo. Pídanle a XOLO: <strong>Xolo, mi perfil es [escribe aquí tu perfil] y quiero profundizar en la planificación de la marcha del XGO para ajustar velocidad, tipo de paso y duración. También quiero entender cómo la API de alto nivel controla la locomoción dentro de la “caja negra” de la IA. ¿Cuándo es seguro depender de esa abstracción y cómo calibrar la velocidad del servo? Enséñame el código en Python para probar distintos patrones de marcha y comparar estabilidad y precisión.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -153,30 +149,30 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2 IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando el código en el robot físico por primera vez y comparando el resultado real con el esperado.</p>
+                <h2>⚡ Actividad 2: IMPLEMENTACIÓN Y PRUEBA DE MARCHAS ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando el código en el robot físico y observando el comportamiento inicial.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Prueba del Truco 1 ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten el primer código de su plan, enfocándose en el ciclo de predicción y observación.</p>
+                            <h3>Paso 1: Prueba de la Marcha 1 ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten el primer código de su plan, enfocándose en la predicción y observación.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Ahora que todos están conectados y listos, vamos con la <strong>Prueba 1</strong>. El equipo encargado de programar, cargue el primer código de su <strong>playlist</strong> en el editor. Antes de ejecutar, vamos a hacernos una <strong>pregunta detonadora</strong>: ¿qué creen que pasará? Verbalicen el <strong>resultado esperado</strong>, por ejemplo "Ok, ahora el robot debería sentarse, esperar un segundo, y luego mover la cola." ¿Listos? ¡<strong>Ejecuten el código</strong> y observen con atención!</p>
+                                <p class="dialogue assistant">¡Muy bien! Ahora que todos están conectados y listos, vamos con la <strong>Prueba 1</strong> de su <strong>'Plan de Marcha'</strong>. El equipo encargado de programar, cargue el primer código en el editor. Antes de ejecutar, predigan: "¿Qué <strong>velocidad</strong> y <strong>tipo de marcha</strong> estamos probando? ¿Cómo esperamos que se vea?". ¡Ahora <strong>ejecuten el código</strong> y observen con atención!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Prueba de los Siguientes Trucos ⏰ 7 minutos</h3>
-                            <p>Guía a los equipos para que analicen el primer resultado y repitan el proceso con los siguientes trucos de su lista, fomentando la participación de todos los miembros.</p>
+                            <h3>Paso 2: Prueba de la Marcha 2 ⏰ 7 minutos</h3>
+                            <p>Guía a los equipos para que analicen el primer resultado y repitan el proceso con la siguiente prueba de su plan.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. ¿El robot hizo lo que esperaban? Discutan brevemente. Ahora, pasemos a la <strong>siguiente prueba</strong> de su <strong>playlist</strong>. ¡Recuerden <strong>rotar quién carga el código</strong>! Repitan el proceso: primero <strong>predigan</strong> en voz alta qué va a pasar, y luego <strong>ejecuten y observen</strong>. ¡Comparen el resultado con su predicción!</p>
+                                <p class="dialogue assistant">Perfecto. ¿El robot hizo lo que esperaban? ¿Fue estable? Discutan brevemente. Ahora, pasemos a la <strong>siguiente prueba</strong> de su plan. ¡Recuerden <strong>rotar quién carga el código</strong>! Repitan el proceso: primero <strong>predigan</strong> qué va a pasar al cambiar el <strong>parámetro</strong>, y luego <strong>ejecuten y observen</strong>. ¡Comparen el resultado con su predicción!</p>
                             </div>
                         </div>
                     </div>
@@ -184,60 +180,60 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3 PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
-                <p><strong>Propósito</strong> Introducir a los estudiantes al proceso de depuración (debugging) de forma práctica, enseñándoles a identificar problemas, analizar errores y buscar soluciones con la ayuda de la IA.</p>
+                <h2>⚡ Actividad 3: EXPERIMENTACIÓN Y CALIBRACIÓN DE PARÁMETROS ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Introducir a los estudiantes al proceso de calibración de forma práctica, enseñándoles a ajustar parámetros para mejorar la precisión y estabilidad.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Introducción al Debugging ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Introduce el concepto de debugging como una parte normal y esencial de la programación. Prepara a los estudiantes para enfrentar errores sin frustración.</p>
+                            <h3>Paso 1: Introducción a la Calibración ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Introduce el concepto de calibración como una parte normal y esencial de la ingeniería robótica.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Es muy probable que algunas de sus pruebas no hayan funcionado a la primera, ¡y eso es fantástico! Porque ahora empieza la parte más importante del trabajo de un <strong>programador</strong>: la <strong>depuración</strong> o <strong>'debugging'</strong>. 'Debugging' es como ser un <strong>detective</strong>: buscamos <strong>pistas (errores)</strong> para resolver el misterio de por qué nuestro código no hace lo que queremos. Si algo no funciona, ¡genial! No lo vean como algo malo, sino como una oportunidad para investigar.</p>
+                                <p class="dialogue assistant">¡Excelente! Es muy probable que sus pruebas iniciales no fueran perfectas. Quizás el robot se desvió o no giró exactamente 90 grados. ¡Eso es fantástico! Porque ahora empieza la parte más importante del trabajo de un <strong>ingeniero de robótica</strong>: la <strong>calibración</strong>. <strong>Calibrar</strong> es hacer pequeños ajustes a los <strong>parámetros</strong>, como la velocidad o el tiempo, para que el robot haga exactamente lo que queremos con la máxima <strong>precisión</strong>.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ciclo de Depuración - Error de Sintaxis ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositivas 6 y 7) Guía a los equipos a través de un escenario de error común para que aprendan a interpretarlo y solucionarlo.</p>
+                            <h3>Paso 2: Ciclo de Calibración - Ajuste de Giro ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7) Guía a los equipos a través de un escenario común de calibración para lograr un giro preciso.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema</strong> ¡Oh, no! El robot hizo el primer movimiento, pero luego se detuvo y dio un error en la pantalla.</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio</strong> Miren el <strong>mensaje de error</strong>. ¿Qué dice? Léanlo con atención. A veces, la respuesta está ahí. ¿Dice algo como <strong>'indentation'</strong> o <strong>'syntax'</strong>?</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> Si no están seguros, ¡pregunten a Xolo! Díganle: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para el robot XGO. Quiero probar las acciones stand, sit y los movimientos direccionales. Este es mi código de la sesión pasada: [escribe aquí tu código]."</strong></p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Ah, un error común en Python! <strong>`IndentationError`</strong> significa que los <strong>espacios</strong> al principio de una línea no son correctos. Asegúrense de que todo el código esté alineado correctamente. ¡Cada espacio cuenta!</p>
+                                <p class="dialogue assistant"><strong>Problema:</strong> "Nuestro robot no gira 90 grados exactos. ¡Gira de más!"</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "El problema no es el código, sino el <strong>parámetro</strong> de tiempo. El <strong>`time.sleep()`</strong> es demasiado largo para la velocidad de giro que elegimos."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, ¿cómo podemos hacer que el giro sea exactamente de 90 grados?".</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Están pensando como ingenieros! La <strong>calibración</strong> es la clave. No hay un número perfecto, deben encontrarlo. Si con <strong>`time.sleep(1.5)`</strong> gira demasiado, prueben con <strong>1.3</strong>. Si se queda corto, prueben con <strong>1.7</strong>. ¡Hagan pruebas y anoten sus resultados hasta encontrar el valor exacto para su robot!"</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 3: Ciclo de Depuración - Ajuste de Tiempo ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Guía a los estudiantes a través de otro problema común relacionado con la velocidad y cómo solucionarlo modificando parámetros.</p>
+                            <h3>Paso 3: Ciclo de Calibración - Estabilidad de Marcha ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los estudiantes a través de otro problema común relacionado con la estabilidad y la velocidad.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema</strong> El robot se mueve, pero es tan rápido que no podemos ver bien el truco.</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio</strong> El <strong>código funciona</strong>, pero el <strong>resultado no es el ideal</strong>. Necesitamos <strong>pausas más largas</strong> para poder apreciar cada movimiento.</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo</strong> <strong>"Xolo, ¿cómo hacemos que el truco sea más lento y se vea mejor?"</strong></p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo</strong> ¡Fácil! Busquen las líneas <strong>`time.sleep()`</strong>. Aumenten el número que está adentro. En lugar de `time.sleep(1)`, prueben con `time.sleep(2)` para duplicar la pausa. ¡Jueguen con esos números hasta que el ritmo sea perfecto!</p>
+                                <p class="dialogue assistant"><strong>Problema:</strong> "Cuando usamos la marcha `trot` a máxima velocidad, el robot se tambalea y no va en línea recta."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "La <strong>'caja negra'</strong> de la IA funciona, pero quizás estamos llevando al robot a sus <strong>límites físicos</strong>. Necesitamos encontrar la velocidad máxima que sea estable."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, ¿cuál es la velocidad más alta que podemos usar sin perder estabilidad?".</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Excelente pregunta de prueba! La <strong>API de alto nivel</strong> intenta mantener la estabilidad, pero el hardware tiene límites. Hagan un experimento: prueben el `trot` a velocidad 100, luego a 90, luego a 80. Anoten sus observaciones y encuentren cuál es la <strong>velocidad máxima de confianza</strong> para su robot. ¡Eso es <strong>calibración</strong>!"</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 4: Implementación del Desafío (Prueba de Combinación) ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Anima a los equipos a intentar la prueba de combinación de su plan, aplicando lo que han aprendido sobre depuración.</p>
+                            <h3>Paso 4: Implementación del Desafío (Combinación Calibrada) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Anima a los equipos a intentar la prueba de combinación de su plan, aplicando lo que han aprendido sobre calibración.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que son expertos en <strong>depuración</strong>, ¡vamos por el <strong>desafío</strong>! Miren su <strong>'Playlist'</strong> y encuentren su <strong>prueba de combinación</strong>. Intenten <strong>juntar los códigos</strong> de varios trucos en un solo programa. Esto les obligará a pensar en la <strong>secuencia</strong> y a manejar los posibles <strong>errores</strong> que surjan. ¡Apliquen todo lo que aprendieron!</p>
+                                <p class="dialogue assistant">Ahora que son expertos en <strong>calibración</strong>, ¡vamos por el <strong>desafío</strong>! Miren su <strong>'Plan de Calibración'</strong> y encuentren su prueba de combinación. Intenten crear una secuencia que use sus nuevos <strong>parámetros calibrados</strong> para lograr un recorrido complejo con alta <strong>precisión</strong>. ¡Apliquen todo lo que aprendieron!</p>
                             </div>
                         </div>
                     </div>
@@ -246,36 +242,36 @@
 
             <div class="activity-card" id="activity-4">
                 <h2>⚡ Actividad 4 GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
-                <p><strong>Propósito</strong> Celebrar los logros, compartir aprendizajes clave sobre la depuración y fomentar una mentalidad de mejora continua al iniciar un nuevo ciclo de trabajo.</p>
+                <p><strong>Propósito</strong> Celebrar los logros, compartir aprendizajes clave sobre la calibración y fomentar una mentalidad de mejora continua.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus resultados y compartan sus experiencias de depuración.</p>
+                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus resultados y compartan sus experiencias de calibración.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Es momento de <strong>Gnius STORM</strong>! Cada equipo, prepárese para mostrar el <strong>'truco'</strong> que mejor les funcionó. Y lo más importante, compartan con la clase un <strong>desafío de depuración</strong> que resolvieron. Por ejemplo "Al principio, el robot no movía la cola porque nos faltó el `time.sleep()` para darle tiempo a hacerlo antes de que el programa terminara." ¡Compartir nuestros errores nos ayuda a todos a aprender!</p>
+                                <p class="dialogue assistant">¡Es momento de <strong>Gnius STORM</strong>! Cada equipo, prepárese para mostrar la secuencia de marcha que mejor lograron <strong>calibrar</strong>. Y lo más importante, compartan con la clase un <strong>descubrimiento de calibración</strong> que hicieron. Por ejemplo, "Descubrimos que para nuestro robot, la velocidad máxima estable en `trot` era 85, no 100." ¡Compartir nuestros datos nos ayuda a todos a aprender!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Reinicio del Ciclo ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) Concluye la actividad principal y lanza un mini-desafío para aprovechar el tiempo restante y reforzar el ciclo de desarrollo ágil.</p>
+                            <p>(Proyectar Diapositiva 11) Concluye la actividad principal y lanza un mini-desafío para aprovechar el tiempo restante.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Increíble trabajo! Han completado su primera playlist. La programación es un <strong>ciclo sin fin de crear, probar y mejorar</strong>. Así que, con el tiempo que nos queda, ¡vamos a la siguiente! Miren su <strong>Plan de Pruebas</strong>. ¿Cuál es la siguiente idea que quieren probar? ¿La combinación o una idea nueva? Copien ese código y empecemos un <strong>nuevo ciclo rápido de prueba y depuración</strong>. ¡No hay tiempo que perder!</p>
+                                <p class="dialogue assistant">¡Increíble trabajo! Han completado su primer ciclo de calibración. La ingeniería es un <strong>ciclo sin fin de crear, probar y mejorar</strong>. Así que, con el tiempo que nos queda, ¡vamos al siguiente! Miren su <strong>Plan de Calibración</strong>. ¿Hay algún otro parámetro que quieran ajustar? ¿Quizás la velocidad de giro? Empecemos un <strong>nuevo ciclo rápido de prueba y calibración</strong>. ¡No hay tiempo que perder!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Extensión (si el tiempo lo permite)</h3>
-                            <p>¡Reto de Detectives! Proyecta un código con un error simple y da 30 segundos a los equipos para encontrarlo. ¡El primer equipo en identificarlo gana un punto!</p>
+                            <p>¡Reto de Precisión! Marquen un punto de inicio y un punto final en el suelo. Los equipos deben calibrar una secuencia de avance para que el robot se detenga lo más cerca posible del punto final.</p>
                         </div>
                     </div>
                 </div>
